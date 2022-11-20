@@ -83,7 +83,7 @@ Ryu's Assistant is Alive
   ◍ Telethon - {}
 """
 
-in_alive = "Hey! Ryu's Assistant is alive\n 🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n• <b>Join @jjk_tech</b>"
+in_alive = "Hey! Ryu's Assistant is alive\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n• <b>Join @jjk_tech</b>"
 
 
 @callback("alive")
@@ -133,7 +133,6 @@ async def lol(ult):
     else:
         parse = "md"
         als = (get_string("alive_1")).format(
-            f"Hey Master! Zehra is Alive",
             OWNER_NAME,
             f"Assistant Zehra is up",
             uptime,
