@@ -132,22 +132,14 @@ async def lol(ult):
             als = als.replace("🌀", _e)
     else:
         parse = "md"
-        als = (get_string("alive_1")).format(
-            header,
-            OWNER_NAME,
-            f"Assistant Zehra is up",
-            uptime,
-            pyver(),
-            __version__,
-            kk,
-        )
+        Txt = "Assistant Zehra is up Master!\n Ready To Work\n"
 
         if a := udB.get_key("ALIVE_EMOJI"):
             als = als.replace("✵", a)
     if pic:
         try:
             await ult.reply(
-                als,
+                Txt,
                 file=pic,
                 parse_mode=parse,
                 link_preview=False,
