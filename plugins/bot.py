@@ -70,21 +70,20 @@ def ULTPIC():
 
 buttons = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/TeamUltroid/Ultroid"),
-        Button.url(get_string("bot_4"), "t.me/UltroidSupportChat"),
+        Button.url(get_string("bot_3"), "https://github.com/Ryu120/Ultroid"),
+        Button.url(get_string("bot_4"), "t.me/jjk_tech"),
     ]
 ]
 
 # Will move to strings
 alive_txt = """
-The Ultroid Userbot
+Ryu's Assistant is Alive
 
   ◍ Version - {}
-  ◍ Py-Ultroid - {}
   ◍ Telethon - {}
 """
 
-in_alive = "{}\n\n🌀 <b>Ultroid Version -><b> <code>{}</code>\n🌀 <b>PyUltroid -></b> <code>{}</code>\n🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n🌀 <b>Branch -></b> [ {} ]\n\n• <b>Join @TeamUltroid</b>"
+in_alive = "Hey! Ryu's Assistant is alive\n 🌀 <b>Python -></b> <code>{}</code>\n🌀 <b>Uptime -></b> <code>{}</code>\n• <b>Join @jjk_tech</b>"
 
 
 @callback("alive")
@@ -134,10 +133,9 @@ async def lol(ult):
     else:
         parse = "md"
         als = (get_string("alive_1")).format(
-            header,
+            f"Hey Master! Zehra is Alive",
             OWNER_NAME,
-            f"{ultroid_version} [{HOSTED_ON}]",
-            UltVer,
+            f"Assistant Zehra is up",
             uptime,
             pyver(),
             __version__,
